@@ -123,7 +123,7 @@ video.frame-media_left {
   margin-top: 5vh;
 }
 
-.soundButton {
+.soundbutton {
   position: fixed;
   bottom: 5vh;
   right: 5vw;
@@ -134,4 +134,17 @@ video.frame-media_left {
 
 .soundbutton.paused {
   opacity: 0.25;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
